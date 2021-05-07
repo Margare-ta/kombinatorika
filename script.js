@@ -16,13 +16,23 @@ function feltunes() {
 
     for (let j = 0; j < 1; j++) {
 
+      function fact(x) { 
+         if (x === 0){
+
+             return 1;
+          }
+            return x * fact(x-1);
+          }
+
+    console.log(fact(i));
+
       let it = ('0; it < 20; it++');
       
       let cell = document.createElement("td");
       let b = document.createElement("td");
 
       let cellText = document.createTextNode(i+"!");
-      let btext = document.createTextNode(i*j);
+      let btext = document.createTextNode(fact);
 
       cell.appendChild(cellText);
       col.appendChild(cell);
