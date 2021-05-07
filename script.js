@@ -14,14 +14,25 @@ function feltunes() {
    
     let col = document.createElement("tr");
 
-    for (let j = 0; j < 2; j++) {
+    for (let j = 0; j < 1; j++) {
+
+      let it = ('0; it < 20; it++');
       
       let cell = document.createElement("td");
+      let b = document.createElement("td");
+
       let cellText = document.createTextNode(i+"!");
+      let btext = document.createTextNode(i*j);
+
       cell.appendChild(cellText);
       col.appendChild(cell);
+
+      b.appendChild(btext);
+      col.appendChild(b);
+
       cell.style.width = "150px";
-    col.style.margin = "20px";
+      b.style.width = "150px";
+      col.style.margin = "20px";
     }
 
     ttBody.appendChild(col);
